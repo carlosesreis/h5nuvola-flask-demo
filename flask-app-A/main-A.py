@@ -1,9 +1,9 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/home')
 def home():
-    return "Flask App in MyBinder"
+    return render_template("template-A.html")
 
-app.run(port=5030)
+app.run(port=5000)
