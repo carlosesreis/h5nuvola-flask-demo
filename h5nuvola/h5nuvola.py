@@ -298,6 +298,10 @@ app.secret_key = 'some super secret key here'
 # h5nuvola GUI - remote browser, H5 visualisation 
 #
 
+@app.route('/test')
+def test():
+    return "TEST"
+
 # home page
 @app.route('/home', methods=['GET', 'POST'])
 def home():
